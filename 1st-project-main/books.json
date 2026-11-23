@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "name": "Fiction & Novels",
+      "items": [
+        "Romance",
+        "Adventure",
+        "Mystery",
+        "Fantasy",
+        "Horror"
+      ]
+    },
+    {
+      "name": "Educational Books",
+      "items": [
+        "Mathematics",
+        "Chemistry",
+        "Biology",
+        "Physics",
+        "English",
+        "Revision Books"
+      ]
+    },
+    {
+      "name": "Business & Finance",
+      "items": [
+        "Entrepreneurship",
+        "Leadership",
+        "Investing",
+        "Personal Finance"
+      ]
+    },
+    {
+      "name": "Children's Books",
+      "items": [
+        "Storybooks",
+        "Picture Books",
+        "Educational Books",
+        "Activity Books"
+      ]
+    },
+    {
+      "name": "Personal Development",
+      "items": [
+        "Motivation",
+        "Productivity",
+        "Self-improvement",
+        "Success"
+      ]
+    },
+    {
+      "name": "Knowledge & Reference",
+      "items": [
+        "History",
+        "Geography",
+        "Science",
+        "Technology",
+        "Dictionaries"
+      ]
+    },
+    {
+      "name": "Other Products",
+      "items": [
+        "Notebooks",
+        "Diaries and Journals",
+        "Bookmarks",
+        "Reading Accessories",
+        "Stationery"
+      ]
+    }
+  ]
+}
