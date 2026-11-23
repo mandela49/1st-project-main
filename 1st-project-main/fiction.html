@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,68 +8,187 @@
     <title>Fiction & Novels | BOOKNEST</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>BOOKNEST</h1>
-    <p>Explore Fiction & Novels</p>
+<header class="shop-header">
+    <a href="index.html" class="logo">BOOK<span>NEST</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#books">Books</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="header-cart">
+        <span>🛒 Cart</span>
+        <span id="cart-count">0</span>
+    </div>
 </header>
 
-<main class="book-page">
+<main>
 
-    <div class="page-heading">
-        <h2>Fiction & Novels</h2>
-        <p>Discover amazing stories, exciting adventures and unforgettable characters.</p>
-    </div>
+    <section class="shop-hero">
+        <a href="index.html" class="back-button">← Back to Home</a>
 
-    <div class="book-grid">
+        <div class="hero-content">
+            <span class="eyebrow">THE BOOKNEST COLLECTION</span>
+            <h1>Stories that take you <span>Beyond.</span></h1>
+            <p>
+                Explore unforgettable adventures, fascinating characters,
+                thrilling mysteries and worlds beyond imagination.
+            </p>
+        </div>
+    </section>
 
-        <div class="book-item">
-            <img src="images/book1.jpg" alt="Romance book cover">
-            <h3>Romance Stories</h3>
-            <p>Beautiful fictional stories about relationships and life.</p>
-            <p class="book-price">KSh 800</p>
+    <section class="shop-content" id="books">
+
+        <div class="shop-heading">
+            <div>
+                <span class="eyebrow">OUR COLLECTION</span>
+                <h2>Fiction & Novels</h2>
+                <p>Discover your next favourite read.</p>
+            </div>
+
+            <input
+                type="search"
+                id="book-search"
+                placeholder="Search for a book..."
+            >
         </div>
 
-        <div class="book-item">
-            <img src="images/book2.jpg" alt="Adventure book cover">
-            <h3>Adventure Tales</h3>
-            <p>Follow exciting journeys and discover new worlds.</p>
-            <p class="book-price">KSh 950</p>
+        <div class="book-grid">
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/The-Alchemist-L.jpg"
+                     alt="The Alchemist cover">
+                <div class="product-info">
+                    <span class="book-category">Adventure</span>
+                    <h3>The Alchemist</h3>
+                    <p>Paulo Coelho</p>
+                    <div class="product-bottom">
+                        <strong>KSh 950</strong>
+                        <button class="add-cart" data-name="The Alchemist" data-price="950">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/Harry-Potter-and-the-Philosophers-Stone-L.jpg"
+                     alt="Harry Potter cover">
+                <div class="product-info">
+                    <span class="book-category">Fantasy</span>
+                    <h3>Harry Potter</h3>
+                    <p>J.K. Rowling</p>
+                    <div class="product-bottom">
+                        <strong>KSh 1,500</strong>
+                        <button class="add-cart" data-name="Harry Potter" data-price="1500">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/The-Hunger-Games-L.jpg"
+                     alt="The Hunger Games cover">
+                <div class="product-info">
+                    <span class="book-category">Adventure</span>
+                    <h3>The Hunger Games</h3>
+                    <p>Suzanne Collins</p>
+                    <div class="product-bottom">
+                        <strong>KSh 1,200</strong>
+                        <button class="add-cart" data-name="The Hunger Games" data-price="1200">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/Pride-and-Prejudice-L.jpg"
+                     alt="Pride and Prejudice cover">
+                <div class="product-info">
+                    <span class="book-category">Romance</span>
+                    <h3>Pride and Prejudice</h3>
+                    <p>Jane Austen</p>
+                    <div class="product-bottom">
+                        <strong>KSh 850</strong>
+                        <button class="add-cart" data-name="Pride and Prejudice" data-price="850">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/The-Great-Gatsby-L.jpg"
+                     alt="The Great Gatsby cover">
+                <div class="product-info">
+                    <span class="book-category">Classic</span>
+                    <h3>The Great Gatsby</h3>
+                    <p>F. Scott Fitzgerald</p>
+                    <div class="product-bottom">
+                        <strong>KSh 900</strong>
+                        <button class="add-cart" data-name="The Great Gatsby" data-price="900">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/To-Kill-a-Mockingbird-L.jpg"
+                     alt="To Kill a Mockingbird cover">
+                <div class="product-info">
+                    <span class="book-category">Drama</span>
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>Harper Lee</p>
+                    <div class="product-bottom">
+                        <strong>KSh 1,100</strong>
+                        <button class="add-cart" data-name="To Kill a Mockingbird" data-price="1100">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/The-Lord-of-the-Rings-L.jpg"
+                     alt="The Lord of the Rings cover">
+                <div class="product-info">
+                    <span class="book-category">Fantasy</span>
+                    <h3>The Lord of the Rings</h3>
+                    <p>J.R.R. Tolkien</p>
+                    <div class="product-bottom">
+                        <strong>KSh 1,800</strong>
+                        <button class="add-cart" data-name="The Lord of the Rings" data-price="1800">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://covers.openlibrary.org/b/title/The-Kite-Runner-L.jpg"
+                     alt="The Kite Runner cover">
+                <div class="product-info">
+                    <span class="book-category">Drama</span>
+                    <h3>The Kite Runner</h3>
+                    <p>Khaled Hosseini</p>
+                    <div class="product-bottom">
+                        <strong>KSh 1,250</strong>
+                        <button class="add-cart" data-name="The Kite Runner" data-price="1250">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
         </div>
+    </section>
 
-        <div class="book-item">
-            <img src="images/book3.jpg" alt="Mystery book cover">
-            <h3>Mystery Books</h3>
-            <p>Uncover secrets through interesting mystery stories.</p>
-            <p class="book-price">KSh 700</p>
-        </div>
-
-        <div class="book-item">
-            <img src="images/book4.jpg" alt="Fantasy book cover">
-            <h3>Fantasy Worlds</h3>
-            <p>Explore magical places and imaginary characters.</p>
-            <p class="book-price">KSh 1,000</p>
-        </div>
-
-        <div class="book-item">
-            <img src="images/book5.jpg" alt="Horror book cover">
-            <h3>Horror Stories</h3>
-            <p>Suspenseful fictional stories full of surprises.</p>
-            <p class="book-price">KSh 850</p>
-        </div>
-
-        <div class="book-item">
-            <img src="images/book6.jpg" alt="Science fiction book cover">
-            <h3>Science Fiction</h3>
-            <p>Discover futuristic worlds and imaginative technology.</p>
-            <p class="book-price">KSh 900</p>
-        </div>
-
-    </div>
-
-    <a href="index.html" class="back-link">← Back to Home</a>
+    <section class="cart-section" id="cart">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items">Your cart is empty.</div>
+        <h3>Total: KSh <span id="cart-total">0</span></h3>
+    </section>
 
 </main>
+
+<footer id="about">
+    <a href="index.html" class="logo">BOOK<span>NEST</span></a>
+    <p>Discover stories. Explore knowledge. Find your next great read.</p>
+    <p>© 2026 BOOKNEST</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

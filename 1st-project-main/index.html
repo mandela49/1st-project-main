@@ -1,131 +1,436 @@
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BOOKNEST</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOOKNEST | Discover Your Next Read</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to the main content</a>
-  
 
-  <header>
-    <h1>BOOKNEST</h1>
-    <h2>BookNest , sells all types of books imaginable!</h2>
-    
+    <!-- NAVIGATION -->
+    <header class="header">
 
- 
+        <a href="index.html" class="logo"> 
+            BOOK<span>NEST.</span>
+        </a>
 
-<main id="main">
-    <section class="card" aria-labelledby="items-title">
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-        <h2 id="items-title">The Following Are Books We Offer</h2>
-        <p class="note">Our Products</p>
+        <a href="#categories" class="header-btn">
+            Explore Books
+        </a>
 
-        <!-- BOOK SEARCH SECTION -->
-        <div class="search-section">
+    </header>
 
-            <h2>Find Your Next Favourite Book</h2>
 
-            <p>Search through our collection of books and categories.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
 
-            <form class="search-box" id="bookSearch">
+        <div class="hero-content">
 
-                <input
-                    type="search"
-                    id="searchInput"
-                    placeholder="Search books or categories..."
-                    aria-label="Search books or categories"
-                >
+            <span class="eyebrow">
+                YOUR WORLD OF BOOKS
+            </span>
 
-                <button type="submit">Search</button>
+            <h1>
+                Every book opens
+                <br>
+                <span>a new world.</span>
+            </h1>
 
-            </form>
+            <p>
+                Discover stories that inspire, knowledge that empowers
+                and books that take you beyond imagination.
+            </p>
 
-            <p id="searchMessage" class="search-message"></p>
+            <div class="hero-actions">
+
+                <a href="#categories" class="primary-btn">
+                    Explore Collection →
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Discover BOOKNEST
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <h3>7+</h3>
+                    <p>Book Categories</p>
+                </div>
+
+                <div>
+                    <h3>∞</h3>
+                    <p>Stories to Explore</p>
+                </div>
+
+                <div>
+                    <h3>1</h3>
+                    <p>Reading Destination</p>
+                </div>
+
+            </div>
 
         </div>
 
-        <!-- BOOK CATEGORY CARDS -->
-        <div class="category-grid">
 
-            <a href="fiction.html" class="category-tab">
-                <h3>Fiction & Novels</h3>
-                <p>Romance, Adventure, Mystery, Fantasy and Horror</p>
-            </a>
+        <div class="hero-image">
 
-            <a href="education.html" class="category-tab">
-                <h3>Educational Books</h3>
-                <p>Mathematics, Chemistry, Biology and Physics</p>
-            </a>
+            <img
+                src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1000"
+                alt="Beautiful library filled with books"
+            >
 
-            <a href="business.html" class="category-tab">
-                <h3>Business & Finance</h3>
-                <p>Entrepreneurship, Leadership and Finance</p>
-            </a>
+            <div class="image-caption">
+                <span>DISCOVER. READ. GROW.</span>
+            </div>
 
-            <a href="children.html" class="category-tab">
-                <h3>Children's Books</h3>
-                <p>Storybooks, Picture Books and Activity Books</p>
-            </a>
+        </div>
 
-            <a href="development.html" class="category-tab">
-                <h3>Personal Development</h3>
-                <p>Motivation, Productivity and Self-improvement</p>
-            </a>
-
-            <a href="knowledge.html" class="category-tab">
-                <h3>Knowledge & Reference</h3>
-                <p>History, Geography, Science and Technology</p>
-            </a>
-
-            <a href="products.html" class="category-tab">
-                <h3>Other Products</h3>
-                <p>Notebooks, Diaries, Bookmarks and Stationery</p>
-            </a>
-
-</div>
-
-Our business description:
-
-"BookNest is an online bookstore offering a wide range of books, including novels, educational textbooks, children's books, business books and personal development books, alongside selected reading accessories."
-
-This gives BookNest a clear identity: Everything you need to read, learn and grow.</p>
-
-     
     </section>
-  </main>
 
-  <footer>
-    <p>Made by BookNest</p>
-    <p>BOOKNEST
 
-Your next chapter starts here.
-Discover stories, gain knowledge and find your next favourite book. At BookNest, we bring readers closer to the books they love.
-Explore
-Home
-Shop Books
-About Us
-Contact Us
-Book Cartegories
-Fiction & Novels
-Educational Books
-Business & Finance
-Science & Technology
-Children's Books
-Personal Development
-Stay Connected
-Have a question or need help finding a book? We'd love to hear from you.
-Email: hello@booknest.com
-Our Promise
-"Every book opens a new world. Let BookNest help you discover yours."
+    <!-- CATEGORY SECTION -->
+    <main>
 
-<p>© 2026 BookNest. All Rights Reserved.</p>
-    <p>Practice pages: <a href="practice/index.html">Town forecast card</a></p>
-  </footer>
+        <section class="categories" id="categories">
 
-  <script type="module" src="app.js"></script>
+            <div class="section-top">
+
+                <div>
+                    <span class="eyebrow">EXPLORE OUR COLLECTION</span>
+
+                    <h2>Find your next <span>favourite.</span></h2>
+
+                    <p>
+                        From captivating stories to powerful knowledge,
+                        discover a collection made for every curious mind.
+                    </p>
+                </div>
+
+                <span class="category-count">07 COLLECTIONS</span>
+
+            </div>
+
+
+            <!-- MAIN CATEGORY CARD -->
+            <div class="main-card">
+
+                <div class="category-grid">
+
+
+                    <!-- FICTION -->
+                    <a href="fiction.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=700"
+                                alt="Fiction books"
+                            >
+
+                            <span class="card-number">01</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">IMAGINATION</span>
+
+                            <h3>Fiction & Novels</h3>
+
+                            <p>
+                                Escape into fascinating stories,
+                                thrilling adventures and imaginary worlds.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- EDUCATION -->
+                    <a href="education.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700"
+                                alt="Educational books"
+                            >
+
+                            <span class="card-number">02</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">LEARNING</span>
+
+                            <h3>Educational Books</h3>
+
+                            <p>
+                                Build knowledge with textbooks,
+                                revision guides and learning resources.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- BUSINESS -->
+                    <a href="business.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700"
+                                alt="Business and finance"
+                            >
+
+                            <span class="card-number">03</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">SUCCESS</span>
+
+                            <h3>Business & Finance</h3>
+
+                            <p>
+                                Explore entrepreneurship, leadership,
+                                investment and financial knowledge.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- CHILDREN -->
+                    <a href="children.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=700"
+                                alt="Children reading books"
+                            >
+
+                            <span class="card-number">04</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">DISCOVERY</span>
+
+                            <h3>Children's Books</h3>
+
+                            <p>
+                                Colourful stories, exciting adventures
+                                and learning for young readers.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- DEVELOPMENT -->
+                    <a href="development.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=700"
+                                alt="Personal development books"
+                            >
+
+                            <span class="card-number">05</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">GROWTH</span>
+
+                            <h3>Personal Development</h3>
+
+                            <p>
+                                Develop new skills, discover your potential
+                                and improve your everyday life.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- KNOWLEDGE -->
+                    <a href="knowledge.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=700"
+                                alt="Knowledge and reference books"
+                            >
+
+                            <span class="card-number">06</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">KNOWLEDGE</span>
+
+                            <h3>Knowledge & Reference</h3>
+
+                            <p>
+                                Explore science, history, geography,
+                                technology and much more.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- PRODUCTS -->
+                    <a href="products.html" class="category-card">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=700"
+                                alt="Reading and writing accessories"
+                            >
+
+                            <span class="card-number">07</span>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-label">ESSENTIALS</span>
+
+                            <h3>Reading Accessories</h3>
+
+                            <p>
+                                Discover notebooks, journals,
+                                bookmarks and stationery.
+                            </p>
+
+                            <span class="card-link">Explore Collection ↗</span>
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=900"
+                    alt="Books and reading space"
+                >
+
+            </div>
+
+            <div class="about-text">
+
+                <span class="eyebrow">THE BOOKNEST EXPERIENCE</span>
+
+                <h2>
+                    More than books.
+                    <span>A world of possibilities.</span>
+                </h2>
+
+                <p>
+                    BOOKNEST is a reading destination built for curious
+                    minds and passionate readers. We bring together
+                    different worlds of knowledge, creativity and
+                    imagination in one place.
+                </p>
+
+                <a href="#categories" class="primary-btn">
+                    Start Exploring →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUOTE SECTION -->
+        <section class="quote-section">
+
+            <p>TURN THE PAGE. DISCOVER SOMETHING NEW.</p>
+
+            <h2>
+                "A new chapter begins with a single page."
+            </h2>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-top">
+
+            <div>
+                <a href="index.html" class="logo">
+                    BOOK<span>NEST.</span>
+                </a>
+
+                <p>
+                    Your home for stories, knowledge and discovery.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Collections</h3>
+                <a href="fiction.html">Fiction</a>
+                <a href="education.html">Education</a>
+                <a href="business.html">Business</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BOOKNEST. All Rights Reserved.</p>
+            <p>READ MORE. DISCOVER MORE.</p>
+        </div>
+
+    </footer>
+
 </body>
 </html>
