@@ -69,20 +69,4 @@ document.querySelectorAll(".add-cart").forEach(button => {
     });
 });
 
-// Search books
-const searchInput = document.getElementById("book-search");
 
-if (searchInput) {
-    searchInput.addEventListener("input", () => {
-        const searchText = searchInput.value.toLowerCase();
-
-        document.querySelectorAll(".product-card").forEach(card => {
-            const bookName = card.textContent.toLowerCase();
-            card.style.display = bookName.includes(searchText)
-                ? ""
-                : "none";
-        });
-    });
-}
-
-updateCart();
