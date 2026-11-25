@@ -1,72 +1,41 @@
 
-let cart = [];
+// =====================================
+// BOOKNEST AUTOMATIC SEARCH
+// =====================================
 
-const cartCount = document.getElementById("cart-count");
-const cartItems = document.getElementById("cart-items");
-const cartTotal = document.getElementById("cart-total");
+document.addEventListener("DOMContentLoaded", function () {
 
-function updateCart() {
-    if (!cartCount || !cartItems || !cartTotal) return;
+    const searchInput = document.getElementById("book-search");
 
-    let totalItems = 0;
-    let totalPrice = 0;
-
-    cartItems.innerHTML = "";
-
-    if (cart.length === 0) {
-        cartItems.textContent = "Your cart is empty.";
+    // Check whether the page has a search bar
+    if (!searchInput) {
+        return;
     }
 
-    cart.forEach((item, index) => {
-        totalItems += item.quantity;
-        totalPrice += item.price * item.quantity;
+    // Find all category cards and book cards
+    const cards = document.querySelectorAll(
+        ".category-card, .product-card"
+    );
 
-        const div = document.createElement("div");
-        div.className = "cart-item";
+    // Search automatically as the user types
+    searchInput.addEventListener("input", function () {
 
-        const name = document.createElement("span");
-        name.textContent =
-            `${item.name} × ${item.quantity} — KSh ${item.price * item.quantity}`;
+        const searchText = searchInput.value
+            .trim()
+            .toLowerCase();
 
-        const removeButton = document.createElement("button");
-        removeButton.textContent = "Remove";
-        removeButton.addEventListener("click", () => {
-            cart.splice(index, 1);
-            updateCart();
+        cards.forEach(function (card) {
+
+            const cardText = card.textContent.toLowerCase();
+
+            if (cardText.includes(searchText)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+
         });
 
-        div.append(name, removeButton);
-        cartItems.appendChild(div);
     });
 
-    cartCount.textContent = totalItems;
-    cartTotal.textContent = totalPrice.toLocaleString("en-KE");
-}
-
-document.querySelectorAll(".add-cart").forEach(button => {
-    button.addEventListener("click", () => {
-        const name = button.dataset.name;
-        const price = Number(button.dataset.price);
-
-        const existingBook = cart.find(item => item.name === name);
-
-        if (existingBook) {
-            existingBook.quantity++;
-        } else {
-            cart.push({
-                name: name,
-                price: price,
-                quantity: 1
-            });
-        }
-
-        updateCart();
-
-        button.textContent = "Added!";
-        setTimeout(() => {
-            button.textContent = "Add to Cart";
-        }, 800);
-    });
 });
-
-

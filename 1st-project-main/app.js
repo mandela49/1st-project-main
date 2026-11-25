@@ -35,4 +35,38 @@ async function showItems() {
   // By the Team alpha gate, also add the empty and invalid states.
 }
 
-showItems()
+if (statusLine && list) {
+    showItems();
+}
+
+// =====================================
+// BOOKNEST AUTOMATIC SEARCH
+// =====================================
+
+const searchInput = document.getElementById("book-search");
+
+if (searchInput) {
+
+    const cards = document.querySelectorAll(
+        ".category-card, .product-card"
+    );
+
+    searchInput.addEventListener("input", function () {
+
+        const searchText = searchInput.value
+            .trim()
+            .toLowerCase();
+
+        cards.forEach(function (card) {
+
+            const cardText = card.textContent.toLowerCase();
+
+            card.style.display = cardText.includes(searchText)
+                ? ""
+                : "none";
+
+        });
+
+    });
+
+}
