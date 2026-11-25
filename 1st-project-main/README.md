@@ -1,4 +1,4 @@
-# Trailblazer team starter
+![alt text](cos.jpg)# Trailblazer team starter
 
 This is your team's starting repository for Trailblazer: AI Product Studio. Your team builds one product here over ten days.
 
@@ -6,7 +6,7 @@ This is your team's starting repository for Trailblazer: AI Product Studio. Your
 
 | Folder or file | What it is | When you use it |
 |---|---|---|
-| `index.html`, `style.css`, `app.js` | Your product's interface. It starts as a skeleton that shows three sample items. | From Day 3 |
+| `index.html`, `style.css`, `app.js` | Your product's interface. It starts as a skeleton that shows three sample items. | From Day 3 |c:
 | `src/service.js` | Your service module (runs in the browser for now). It fetches and checks data for the interface. | Days 3 and 4 |
 | `src/prepared-answers.js` | Finds a checked answer to a user's question. Only for products with an AI feature. | Day 5 |
 | `data/` | Sample data made up for this course, a saved forecast, and the data for every challenge in `data/challenges/`. `data/README.md` says where each file came from. | From Day 3 |
